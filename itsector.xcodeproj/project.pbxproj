@@ -15,7 +15,18 @@
 		5221117C2984800D00478410 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5221117A2984800D00478410 /* LaunchScreen.storyboard */; };
 		522111982984836800478410 /* DataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522111972984836800478410 /* DataResponse.swift */; };
 		5221119B298483B400478410 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5221119A298483B400478410 /* HTTPClient.swift */; };
+		522111A3298484D100478410 /* itsectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522111A2298484D100478410 /* itsectorTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		522111A4298484D100478410 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522111642984800C00478410 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5221116B2984800C00478410;
+			remoteInfo = itsector;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5221116C2984800C00478410 /* itsector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = itsector.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,10 +39,19 @@
 		5221117D2984800D00478410 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		522111972984836800478410 /* DataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataResponse.swift; sourceTree = "<group>"; };
 		5221119A298483B400478410 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		522111A0298484D100478410 /* itsectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = itsectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		522111A2298484D100478410 /* itsectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itsectorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		522111692984800C00478410 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5221119D298484D100478410 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				5221116E2984800C00478410 /* itsector */,
+				522111A1298484D100478410 /* itsectorTests */,
 				5221116D2984800C00478410 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				5221116C2984800C00478410 /* itsector.app */,
+				522111A0298484D100478410 /* itsectorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,6 +111,14 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		522111A1298484D100478410 /* itsectorTests */ = {
+			isa = PBXGroup;
+			children = (
+				522111A2298484D100478410 /* itsectorTests.swift */,
+			);
+			path = itsectorTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,6 +139,24 @@
 			productReference = 5221116C2984800C00478410 /* itsector.app */;
 			productType = "com.apple.product-type.application";
 		};
+		5221119F298484D100478410 /* itsectorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 522111A6298484D100478410 /* Build configuration list for PBXNativeTarget "itsectorTests" */;
+			buildPhases = (
+				5221119C298484D100478410 /* Sources */,
+				5221119D298484D100478410 /* Frameworks */,
+				5221119E298484D100478410 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				522111A5298484D100478410 /* PBXTargetDependency */,
+			);
+			name = itsectorTests;
+			productName = itsectorTests;
+			productReference = 522111A0298484D100478410 /* itsectorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -121,6 +169,10 @@
 				TargetAttributes = {
 					5221116B2984800C00478410 = {
 						CreatedOnToolsVersion = 14.0.1;
+					};
+					5221119F298484D100478410 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 5221116B2984800C00478410;
 					};
 				};
 			};
@@ -138,6 +190,7 @@
 			projectRoot = "";
 			targets = (
 				5221116B2984800C00478410 /* itsector */,
+				5221119F298484D100478410 /* itsectorTests */,
 			);
 		};
 /* End PBXProject section */
@@ -150,6 +203,13 @@
 				5221117C2984800D00478410 /* LaunchScreen.storyboard in Resources */,
 				522111792984800D00478410 /* Assets.xcassets in Resources */,
 				522111772984800C00478410 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5221119E298484D100478410 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,7 +228,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5221119C298484D100478410 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				522111A3298484D100478410 /* itsectorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		522111A5298484D100478410 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5221116B2984800C00478410 /* itsector */;
+			targetProxy = 522111A4298484D100478410 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		522111752984800C00478410 /* Main.storyboard */ = {
@@ -358,6 +434,40 @@
 			};
 			name = Release;
 		};
+		522111A7298484D100478410 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ronalds.com.br.itsectorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/itsector.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/itsector";
+			};
+			name = Debug;
+		};
+		522111A8298484D100478410 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ronalds.com.br.itsectorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/itsector.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/itsector";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -375,6 +485,15 @@
 			buildConfigurations = (
 				522111812984800D00478410 /* Debug */,
 				522111822984800D00478410 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		522111A6298484D100478410 /* Build configuration list for PBXNativeTarget "itsectorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				522111A7298484D100478410 /* Debug */,
+				522111A8298484D100478410 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
