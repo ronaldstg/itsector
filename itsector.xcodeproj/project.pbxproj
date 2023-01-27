@@ -13,6 +13,7 @@
 		522111772984800C00478410 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522111752984800C00478410 /* Main.storyboard */; };
 		522111792984800D00478410 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 522111782984800D00478410 /* Assets.xcassets */; };
 		5221117C2984800D00478410 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5221117A2984800D00478410 /* LaunchScreen.storyboard */; };
+		522111982984836800478410 /* DataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522111972984836800478410 /* DataResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		522111782984800D00478410 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5221117B2984800D00478410 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5221117D2984800D00478410 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		522111972984836800478410 /* DataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		5221116E2984800C00478410 /* itsector */ = {
 			isa = PBXGroup;
 			children = (
+				522111962984835E00478410 /* Model */,
 				5221116F2984800C00478410 /* AppDelegate.swift */,
 				522111712984800C00478410 /* SceneDelegate.swift */,
 				522111732984800C00478410 /* ViewController.swift */,
@@ -65,6 +68,14 @@
 				5221117D2984800D00478410 /* Info.plist */,
 			);
 			path = itsector;
+			sourceTree = "<group>";
+		};
+		522111962984835E00478410 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				522111972984836800478410 /* DataResponse.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +151,7 @@
 			files = (
 				522111742984800C00478410 /* ViewController.swift in Sources */,
 				522111702984800C00478410 /* AppDelegate.swift in Sources */,
+				522111982984836800478410 /* DataResponse.swift in Sources */,
 				522111722984800C00478410 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
