@@ -31,18 +31,17 @@ class BooksViewModel {
             }
         })
     }
-
     
-    var title: String {
-//        return books.first?.volumeInfo.title ?? ""
-        return "TESTE"
+    func getTitleForIndex(_ index: Int) -> String {
+        return books[index].volumeInfo.title
     }
     
-    var thumbnailURL: URL? {
-        guard let urlString = books.first?.volumeInfo.imageLinks?.thumbnail else {
-            return nil
-        }
-        
-        return URL(string: urlString)
+    func getThumbnailURLForIndex(_ index: Int) -> String? {
+        return books[index].volumeInfo.imageLinks?.thumbnail
     }
+    
+    func getBookForIndex(_ index: Int) -> Item {
+        return books[index]
+    }
+    
 }
