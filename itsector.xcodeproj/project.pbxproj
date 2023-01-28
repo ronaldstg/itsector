@@ -18,7 +18,6 @@
 		522111A3298484D100478410 /* itsectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522111A2298484D100478410 /* itsectorTests.swift */; };
 		522111AB2984894C00478410 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522111AA2984894C00478410 /* BookCell.swift */; };
 		522111AE29848A3500478410 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522111AD29848A3500478410 /* UIImageView+Extensions.swift */; };
-		522111B129848AFC00478410 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522111B029848AFC00478410 /* Book.swift */; };
 		522111B329848B4700478410 /* BooksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522111B229848B4700478410 /* BooksViewModel.swift */; };
 		522111B5298493A300478410 /* BooksTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522111B4298493A300478410 /* BooksTableView.swift */; };
 /* End PBXBuildFile section */
@@ -48,7 +47,6 @@
 		522111A2298484D100478410 /* itsectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itsectorTests.swift; sourceTree = "<group>"; };
 		522111AA2984894C00478410 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
 		522111AD29848A3500478410 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
-		522111B029848AFC00478410 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		522111B229848B4700478410 /* BooksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksViewModel.swift; sourceTree = "<group>"; };
 		522111B4298493A300478410 /* BooksTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksTableView.swift; sourceTree = "<group>"; };
 		522111B62984AB7B00478410 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -113,7 +111,6 @@
 			isa = PBXGroup;
 			children = (
 				522111972984836800478410 /* DataResponse.swift */,
-				522111B029848AFC00478410 /* Book.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -267,7 +264,6 @@
 				5221119B298483B400478410 /* HTTPClient.swift in Sources */,
 				522111B5298493A300478410 /* BooksTableView.swift in Sources */,
 				522111702984800C00478410 /* AppDelegate.swift in Sources */,
-				522111B129848AFC00478410 /* Book.swift in Sources */,
 				522111982984836800478410 /* DataResponse.swift in Sources */,
 				522111B329848B4700478410 /* BooksViewModel.swift in Sources */,
 				522111722984800C00478410 /* SceneDelegate.swift in Sources */,
