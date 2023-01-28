@@ -7,13 +7,39 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class BooksViewController: UIViewController {
+    let booksTableView = BooksTableView()
+    var booksViewModel = BooksViewModel()
+    
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//
+//        booksTableView.backgroundColor = UIColor.red
+//        view.addSubview(booksTableView)
+//
+//        booksTableView.translatesAutoresizingMaskIntoConstraints = false
+//        NSLayoutConstraint.activate([
+//            booksTableView.topAnchor.constraint(equalTo: view.topAnchor),
+//            booksTableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+//            booksTableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+//            booksTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+//        ])
+//
+//        booksViewModel.fetchBooks()
+//    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        setupView()
+        booksViewModel.fetchBooks()
     }
-
-
+    
+    private func setupView() {
+        booksTableView.viewModel = booksViewModel
+        booksTableView.frame = view.bounds
+        view.addSubview(booksTableView)
+    }
 }
 

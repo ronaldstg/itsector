@@ -16,6 +16,11 @@
 		522111982984836800478410 /* DataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522111972984836800478410 /* DataResponse.swift */; };
 		5221119B298483B400478410 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5221119A298483B400478410 /* HTTPClient.swift */; };
 		522111A3298484D100478410 /* itsectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522111A2298484D100478410 /* itsectorTests.swift */; };
+		522111AB2984894C00478410 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522111AA2984894C00478410 /* BookCell.swift */; };
+		522111AE29848A3500478410 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522111AD29848A3500478410 /* UIImageView+Extensions.swift */; };
+		522111B129848AFC00478410 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522111B029848AFC00478410 /* Book.swift */; };
+		522111B329848B4700478410 /* BooksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522111B229848B4700478410 /* BooksViewModel.swift */; };
+		522111B5298493A300478410 /* BooksTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522111B4298493A300478410 /* BooksTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +46,11 @@
 		5221119A298483B400478410 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		522111A0298484D100478410 /* itsectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = itsectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		522111A2298484D100478410 /* itsectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itsectorTests.swift; sourceTree = "<group>"; };
+		522111AA2984894C00478410 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
+		522111AD29848A3500478410 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		522111B029848AFC00478410 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		522111B229848B4700478410 /* BooksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksViewModel.swift; sourceTree = "<group>"; };
+		522111B4298493A300478410 /* BooksTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +92,11 @@
 		5221116E2984800C00478410 /* itsector */ = {
 			isa = PBXGroup;
 			children = (
-				52211199298483A600478410 /* Service */,
 				522111962984835E00478410 /* Model */,
+				522111A92984892A00478410 /* View */,
+				522111AF29848ABC00478410 /* ViewModel */,
+				522111AC298489C300478410 /* Helpers */,
+				52211199298483A600478410 /* Service */,
 				5221116F2984800C00478410 /* AppDelegate.swift */,
 				522111712984800C00478410 /* SceneDelegate.swift */,
 				522111732984800C00478410 /* ViewController.swift */,
@@ -99,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				522111972984836800478410 /* DataResponse.swift */,
+				522111B029848AFC00478410 /* Book.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -117,6 +131,31 @@
 				522111A2298484D100478410 /* itsectorTests.swift */,
 			);
 			path = itsectorTests;
+			sourceTree = "<group>";
+		};
+		522111A92984892A00478410 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				522111AA2984894C00478410 /* BookCell.swift */,
+				522111B4298493A300478410 /* BooksTableView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		522111AC298489C300478410 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				522111AD29848A3500478410 /* UIImageView+Extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		522111AF29848ABC00478410 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				522111B229848B4700478410 /* BooksViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,10 +259,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				522111AB2984894C00478410 /* BookCell.swift in Sources */,
+				522111AE29848A3500478410 /* UIImageView+Extensions.swift in Sources */,
 				522111742984800C00478410 /* ViewController.swift in Sources */,
 				5221119B298483B400478410 /* HTTPClient.swift in Sources */,
+				522111B5298493A300478410 /* BooksTableView.swift in Sources */,
 				522111702984800C00478410 /* AppDelegate.swift in Sources */,
+				522111B129848AFC00478410 /* Book.swift in Sources */,
 				522111982984836800478410 /* DataResponse.swift in Sources */,
+				522111B329848B4700478410 /* BooksViewModel.swift in Sources */,
 				522111722984800C00478410 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
